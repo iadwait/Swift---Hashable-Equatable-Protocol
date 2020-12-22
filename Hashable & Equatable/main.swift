@@ -9,6 +9,9 @@
 import Foundation
 
 //MARK:- Equatable
+// When you want to compare two objects use Equatable
+// if 1 parameter value cntains type as another struct it gives us method on what to compare
+// Else it will compare all the parameters if other struct is also confirmed to Equatable
 
 //struct Person: Equatable {
 //    var name: String
@@ -48,7 +51,7 @@ if obj1 == obj2
 }
 
 //MARK:- Hashable
-
+// When in dictionary you want to keep key value as object of struct use Hashable
 struct user {
     let name : String
 }
